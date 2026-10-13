@@ -1,0 +1,19 @@
+[package]
+name = "klarity-exhibit-18-plan-net-directory"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Plan-Net directory checks"
+publish = false
+
+[lib]
+name = "plan_net"
+path = "src/lib.rs"
+
+[[bin]]
+name = "validate-plan-net"
+path = "src/bin/validate_plan_net.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
